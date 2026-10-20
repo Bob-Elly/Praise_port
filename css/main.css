@@ -148,6 +148,24 @@ button {
   }
 }
 
+@media (max-width: 540px) {
+  .container {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+  .section {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 /* --- Buttons System --- */
 .btn {
   display: inline-flex;
@@ -513,6 +531,13 @@ button {
 .card-lift:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
+}
+
+@media (max-width: 540px) {
+  .card {
+    padding: 1.5rem 1.15rem;
+    border-radius: 20px;
+  }
 }
 
 /* --- Section Headings & Badges --- */
