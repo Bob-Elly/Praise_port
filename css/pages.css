@@ -75,16 +75,16 @@
 /* Offset maroon outline ring */
 .welcome-photo-ring {
   position: absolute;
-  inset: 0;
+  inset: -8px;
   border-radius: 50%;
-  border: 2.5px solid var(--color-maroon);
-  transform: translate(14px, 14px);
+  border: 2px solid var(--color-maroon);
+  transform: translate(8px, 8px);
   z-index: 1;
   transition: transform var(--transition-smooth);
 }
 
 .welcome-photo-wrapper:hover .welcome-photo-ring {
-  transform: translate(18px, 18px);
+  transform: translate(12px, 12px);
 }
 
 .welcome-photo-img {
@@ -130,7 +130,7 @@
     margin: 0 auto;
   }
   .welcome-photo-ring {
-    transform: translate(10px, 10px);
+    transform: translate(6px, 6px);
   }
   .welcome-btn-wrap {
     display: flex;
@@ -245,6 +245,18 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--color-text-main);
+}
+
+.home-about-action {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 640px) {
+  .home-about-action {
+    justify-content: center;
+  }
 }
 
 /* Home: Selected Projects Slideshow Marquee */

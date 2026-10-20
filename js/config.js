@@ -16,7 +16,7 @@ window.PORTFOLIO_CONFIG = {
 
   // Social & direct channels (LinkedIn, WhatsApp, Gmail)
   socials: {
-    linkedin: "https://www.linkedin.com/in/godwinpraise-placeholder",
+    linkedin: "https://ng.linkedin.com/in/praise-godwin-6896ba287",
     whatsapp: "https://wa.me/2348145778443",
     gmail: "mailto:godwinpraise05@gmail.com"
   },
