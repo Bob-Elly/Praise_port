@@ -70,21 +70,7 @@
   position: relative;
   width: clamp(220px, 25vw, 310px);
   height: clamp(220px, 25vw, 310px);
-}
-
-/* Offset maroon outline ring */
-.welcome-photo-ring {
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  border: 2px solid var(--color-maroon);
-  transform: translate(8px, 8px);
-  z-index: 1;
-  transition: transform var(--transition-smooth);
-}
-
-.welcome-photo-wrapper:hover .welcome-photo-ring {
-  transform: translate(12px, 12px);
+  margin: 0 auto;
 }
 
 .welcome-photo-img {
@@ -93,9 +79,14 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  z-index: 2;
-  box-shadow: 0 10px 28px rgba(82, 0, 2, 0.15);
   border: 4px solid var(--color-white);
+  box-shadow: 0 16px 36px rgba(82, 0, 2, 0.14), 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.welcome-photo-wrapper:hover .welcome-photo-img {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 22px 48px rgba(82, 0, 2, 0.18), 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .welcome-bio-column {
@@ -128,9 +119,6 @@
   }
   .welcome-photo-container {
     margin: 0 auto;
-  }
-  .welcome-photo-ring {
-    transform: translate(6px, 6px);
   }
   .welcome-btn-wrap {
     display: flex;
