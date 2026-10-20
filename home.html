@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Godwin Praise | UI, UX &amp; Brand Designer</title>
+  <meta name="description" content="Turning ideas into products. Godwin Praise is a UI, UX and brand designer creating clean, user-focused digital experiences." />
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- Sticky Frosted-Glass Navigation -->
+  <header class="header-nav">
+    <nav class="nav-glass-bar" aria-label="Main Navigation">
+      <a href="home.html" class="nav-link active" aria-current="page">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="process.html" class="nav-link">Process</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer Panel -->
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="home.html" class="nav-link active" aria-current="page">Home</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="process.html" class="nav-link">Process</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <h1 class="hero-headline">
+            Turning Ideas <span class="text-maroon">Into Products</span>
+          </h1>
+          <p class="hero-intro-name">I'm Godwin Praise,</p>
+          <p class="hero-tagline">
+            A product designer creating clean, user-focused digital experiences.
+          </p>
+          <a href="projects.html" class="btn btn-primary" id="hero-see-projects-btn">
+            See My Projects <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="hero-phone-col">
+          <img 
+            src="assets/images/hero-phone.png" 
+            alt="Hand holding smartphone showcasing Baggit mobile application design" 
+            class="hero-phone-img" 
+            width="600" 
+            height="557"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section (Shortened) -->
+    <section class="section home-about-section" id="about-summary">
+      <div class="container">
+        <div class="home-about-card">
+          <h2 class="home-about-heading">ABOUT ME</h2>
+          <div class="home-about-paragraphs">
+            <p>
+              I'm Godwin Praise, a product designer focused on creating clean, modern, and intuitive digital experiences that solve real user problems. I blend user-centered thinking with strong visual design to help founders and teams build products that are simple, usable, and aligned with business goals.
+            </p>
+            <p>
+              My process is rooted in understanding: the user, the product, and the problem that needs to be solved. I turn those insights into thoughtful interfaces and seamless user flows that make products feel effortless to use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Selected Projects Slideshow -->
+    <section class="selected-projects-marquee-section" id="selected-projects">
+      <div class="marquee-header">
+        <h2 class="marquee-heading">Selected Projects</h2>
+      </div>
+
+      <div class="marquee-container" aria-label="Selected Projects Carousel">
+        <div class="marquee-track">
+          <!-- Slide Set 1 -->
+          <div class="marquee-slide">
+            <img src="assets/images/baggit-auth.png" alt="Baggit sign-in and sign-up mobile screens" class="marquee-slide-img" width="467" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide">
+            <img src="assets/images/fitness_analytics.png" alt="Fitness App analytics and goals screen" class="marquee-slide-img" width="395" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide">
+            <img src="assets/images/akumart-for-you.png" alt="AkuMart For You dashboard page" class="marquee-slide-img" width="584" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide">
+            <img src="assets/images/yinyin-fantasy.png" alt="Yinyin Fantasy sticker and packaging design" class="marquee-slide-img" width="460" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide">
+            <img src="assets/images/novatech-login.png" alt="Nova Tech automation login screen" class="marquee-slide-img" width="803" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide">
+            <img src="assets/images/wix-landing.jpg" alt="Landing page responsive design mockup" class="marquee-slide-img" width="380" height="380" loading="lazy" />
+          </div>
+
+          <!-- Slide Set 2 (Duplicate for seamless continuous loop) -->
+          <div class="marquee-slide" aria-hidden="true">
+            <img src="assets/images/baggit-auth.png" alt="" class="marquee-slide-img" width="467" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide" aria-hidden="true">
+            <img src="assets/images/fitness_analytics.png" alt="" class="marquee-slide-img" width="395" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide" aria-hidden="true">
+            <img src="assets/images/akumart-for-you.png" alt="" class="marquee-slide-img" width="584" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide" aria-hidden="true">
+            <img src="assets/images/yinyin-fantasy.png" alt="" class="marquee-slide-img" width="460" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide" aria-hidden="true">
+            <img src="assets/images/novatech-login.png" alt="" class="marquee-slide-img" width="803" height="380" loading="lazy" />
+          </div>
+          <div class="marquee-slide" aria-hidden="true">
+            <img src="assets/images/wix-landing.jpg" alt="" class="marquee-slide-img" width="380" height="380" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee-footer-btn">
+        <a href="projects.html" class="btn btn-cream" id="marquee-see-projects-btn">
+          See Projects <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 4. Design Tools Strip (Single Line, No Duplicates) -->
+    <section class="section design-tools-section" id="tools">
+      <div class="container">
+        <div class="design-tools-card">
+          <h2 class="design-tools-title">Design Tools</h2>
+          <div class="design-tools-row">
+            <!-- Figma -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="Figma">
+                <svg viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+                  <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                  <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+                  <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                  <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+                </svg>
+              </div>
+              <span class="tool-name">Figma</span>
+            </div>
+
+            <!-- Framer -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="Framer">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H20V8H12L4 0Z" fill="#0055FF"/>
+                  <path d="M4 8H12L20 16H4V8Z" fill="#0055FF"/>
+                  <path d="M4 16H12V24L4 16Z" fill="#0055FF"/>
+                </svg>
+              </div>
+              <span class="tool-name">Framer</span>
+            </div>
+
+            <!-- Pinterest -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="Pinterest">
+                <svg viewBox="0 0 24 24" fill="#E60023" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                </svg>
+              </div>
+              <span class="tool-name">Pinterest</span>
+            </div>
+
+            <!-- FigJam -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="FigJam">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="6" fill="#9747FF"/>
+                  <path d="M6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18H6V12Z" fill="#FFF"/>
+                </svg>
+              </div>
+              <span class="tool-name">FigJam</span>
+            </div>
+
+            <!-- Behance -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="Behance">
+                <svg viewBox="0 0 24 24" fill="#0057FF" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 7h-7v2h7V7zm1.726 10c-.442 1.297-2.029 3-4.971 3-3.459 0-5.69-2.336-5.69-5.918 0-3.523 2.164-6.082 5.566-6.082 3.551 0 5.344 2.508 5.344 5.795 0 .52-.062 1.055-.078 1.205h-8.082c.113 1.957 1.543 3.016 3.137 3.016 1.348 0 2.293-.656 2.774-1.617l2.001.601zm-5.187-5.594c-.062-1.391-.984-2.188-2.281-2.188-1.422 0-2.375.891-2.578 2.188h4.859zm-13.539 7.594h-5v-14h5.457c3.184 0 4.887 1.488 4.887 3.902 0 1.547-.797 2.684-2.078 3.305 1.703.543 2.594 1.879 2.594 3.738 0 2.656-1.922 4.055-5.86 4.055zm-2.5-8.234h2.516c1.375 0 2.266-.672 2.266-1.906 0-1.156-.844-1.844-2.203-1.844h-2.579v3.75zm0 6.094h2.641c1.547 0 2.5-.766 2.5-2.062 0-1.359-.984-2.125-2.453-2.125h-2.688v4.187z"/>
+                </svg>
+              </div>
+              <span class="tool-name">Behance</span>
+            </div>
+
+            <!-- Dribbble -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="Dribbble">
+                <svg viewBox="0 0 24 24" fill="#EA4C89" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.165 10.638c-.352-.061-2.734-.46-5.467-.09 1.158 3.197 1.637 5.864 1.761 6.59 2.274-1.632 3.706-4.249 3.706-6.5zM12 1.838c3.084 0 5.864 1.391 7.728 3.593-2.316 1.706-5.441 2.659-8.791 2.766-.465-1.025-.97-2.05-1.517-3.045 1.258-.453 2.607-.698 4.01-.698zm-6.046 2.302c.571 1.018 1.096 2.067 1.579 3.118-3.957 1.158-7.533 1.196-7.533 1.196.885-3.053 3.327-5.452 6.425-6.579zm-4.116 7.822s3.689-.04 7.87-1.285c.348.736.671 1.488.966 2.253-5.267 1.656-7.79 5.568-7.79 5.568-1.127-1.836-1.785-3.992-1.785-6.536zm3.32 8.761c.642-.977 2.873-4.195 7.643-5.786 1.082 2.871 1.518 5.679 1.615 6.368-1.745.86-3.719 1.348-5.812 1.348-1.57 0-3.064-.282-4.446-.786zm11.59-1.936c-.114-.73-.559-3.328-1.621-6.223 2.646-.388 4.966.012 5.309.076-.285 2.502-1.677 4.664-3.688 6.147z"/>
+                </svg>
+              </div>
+              <span class="tool-name">Dribbble</span>
+            </div>
+
+            <!-- Miro -->
+            <div class="tool-item">
+              <div class="tool-icon-wrap" title="Miro">
+                <svg viewBox="0 0 24 24" fill="#050038" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.84 0L13.7 9.42l3.41 5.37L24 0h-5.16zM6.86 0L1.72 9.42l3.41 5.37L12.02 0H6.86zM0 14.79l5.14 9.21h5.16L5.16 14.79H0zm11.98 0l5.14 9.21h5.16l-5.14-9.21h-5.16z" fill="#FFD02F"/>
+                </svg>
+              </div>
+              <span class="tool-name">Miro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Closing Contact Section (Reusable Component) -->
+    <section class="section section-closing-contact" id="contact-section">
+      <div class="container">
+        <div class="closing-contact-header">
+          <span class="badge-tan">Let's Connect</span>
+          <h2 class="heading-xl">Transform Your Concept into a Functional Digital Product.</h2>
+          <p class="body-lead">
+            Ready to turn your ideas into intuitive, high-impact digital experiences? Let's connect and build something extraordinary together.
+          </p>
+        </div>
+
+        <div class="closing-contact-grid">
+          <!-- Left: Project Details Form -->
+          <div class="contact-form-card">
+            <h3 class="heading-md" style="margin-bottom: 1.5rem;">Project Details</h3>
+            <form 
+              name="contact-home" 
+              method="POST" 
+              data-netlify="true" 
+              netlify-honeypot="bot-field"
+              class="contact-form"
+              id="home-contact-form"
+            >
+              <input type="hidden" name="form-name" value="contact-home" />
+              
+              <!-- Honeypot anti-spam field -->
+              <p class="visually-hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-group">
+                <label for="home-name" class="form-label">Name</label>
+                <input type="text" id="home-name" name="name" class="form-control" placeholder="Your full name" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="home-email" class="form-label">Email</label>
+                <input type="email" id="home-email" name="email" class="form-control" placeholder="your@email.com" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="home-phone" class="form-label">Phone / WhatsApp <span class="optional">(optional)</span></label>
+                <input type="tel" id="home-phone" name="phone" class="form-control" placeholder="+234 ..." />
+              </div>
+
+              <div class="form-group">
+                <label for="home-message" class="form-label">About Project</label>
+                <textarea id="home-message" name="message" class="form-control" placeholder="Tell me a bit about your project." required></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="home-form-submit-btn">
+                Proceed <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Book Call Card & What to Expect -->
+          <div class="contact-sidebar">
+            <div class="sidebar-card book-call-card">
+              <h3 class="heading-md" style="color: var(--color-maroon);">Book a call today!</h3>
+              <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+                For immediate attention, let's talk directly on your project.
+              </p>
+              <a 
+                href="https://cal.com/praise-godwin-6lfzkq/15min" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-primary"
+                data-config-booking
+                id="home-book-call-btn"
+              >
+                Schedule 15-mins call
+              </a>
+            </div>
+
+            <div class="sidebar-card">
+              <h3 class="heading-md" style="margin-bottom: 0.5rem;">What To Expect</h3>
+              <ul class="what-to-expect-list">
+                <li class="what-to-expect-item">
+                  <span class="check-dot">✓</span>
+                  <span>Project Goals &amp; Vision</span>
+                </li>
+                <li class="what-to-expect-item">
+                  <span class="check-dot">✓</span>
+                  <span>Target Users &amp; Audience</span>
+                </li>
+                <li class="what-to-expect-item">
+                  <span class="check-dot">✓</span>
+                  <span>Functionality of the product</span>
+                </li>
+                <li class="what-to-expect-item">
+                  <span class="check-dot">✓</span>
+                  <span>Branding, style, and visual direction</span>
+                </li>
+                <li class="what-to-expect-item">
+                  <span class="check-dot">✓</span>
+                  <span>What kind of app, websites, or experiences they like</span>
+                </li>
+                <li class="what-to-expect-item">
+                  <span class="check-dot">✓</span>
+                  <span>Key deliverables (wireframes, prototypes, high-fidelity designs)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Godwin Praise. All Rights Reserved. UI, UX &amp; Brand Designer.</p>
+      <div class="footer-links">
+        <a href="home.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="projects.html" class="footer-link">Projects</a>
+        <a href="process.html" class="footer-link">Process</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slideshow.js"></script>
+</body>
+</html>

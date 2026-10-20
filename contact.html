@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Godwin Praise | UI, UX &amp; Brand Designer</title>
+  <meta name="description" content="Get in touch with Godwin Praise. Let's work together to build your next product with clean, user-focused UI/UX design." />
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- Sticky Frosted-Glass Navigation -->
+  <header class="header-nav">
+    <nav class="nav-glass-bar" aria-label="Main Navigation">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="process.html" class="nav-link">Process</a>
+      <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+    </nav>
+
+    <button class="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="process.html" class="nav-link">Process</a>
+    <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+  </div>
+
+  <main>
+    <section class="section contact-page-hero">
+      <div class="container">
+        <div class="contact-page-grid">
+          <!-- Left Column: Headline, Email, Socials, Booking Card -->
+          <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+            <div>
+              <span class="badge-tan">Get In Touch</span>
+              <h1 class="heading-xl" style="margin-bottom: 1rem;">
+                Let's work together to build your next product
+              </h1>
+              <p class="body-lead" style="line-height: 1.7;">
+                Ready to transform your product with clean, trending UI that enhances engagement, simplifies interactions, and gives your users a reason to stay.
+              </p>
+            </div>
+
+            <!-- Email & Socials Card -->
+            <div class="card card-cream">
+              <h2 class="heading-md" style="margin-bottom: 0.35rem;">Send an email directly</h2>
+              <p style="font-size: 1.05rem; font-weight: 600; margin-bottom: 1.5rem;">
+                <a href="mailto:godwinpraise05@gmail.com" class="text-maroon" data-config-email="link" id="contact-email-link">
+                  godwinpraise05@gmail.com
+                </a>
+              </p>
+
+              <h3 style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.06em;">
+                Follow on my socials
+              </h3>
+              <div class="social-links-list">
+                <!-- LinkedIn -->
+                <a 
+                  href="https://www.linkedin.com/in/godwinpraise-placeholder" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="social-pill-btn" 
+                  title="LinkedIn"
+                  data-config-social="linkedin"
+                  aria-label="LinkedIn Profile"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+
+                <!-- Twitter / X -->
+                <a 
+                  href="https://x.com/godwinpraise-placeholder" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="social-pill-btn" 
+                  title="X (formerly Twitter)"
+                  data-config-social="twitter"
+                  aria-label="X Profile"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+
+                <!-- Dribbble -->
+                <a 
+                  href="https://dribbble.com/godwinpraise-placeholder" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="social-pill-btn" 
+                  title="Dribbble"
+                  data-config-social="dribbble"
+                  aria-label="Dribbble Portfolio"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.165 10.638c-.352-.061-2.734-.46-5.467-.09 1.158 3.197 1.637 5.864 1.761 6.59 2.274-1.632 3.706-4.249 3.706-6.5zM12 1.838c3.084 0 5.864 1.391 7.728 3.593-2.316 1.706-5.441 2.659-8.791 2.766-.465-1.025-.97-2.05-1.517-3.045 1.258-.453 2.607-.698 4.01-.698zm-6.046 2.302c.571 1.018 1.096 2.067 1.579 3.118-3.957 1.158-7.533 1.196-7.533 1.196.885-3.053 3.327-5.452 6.425-6.579zm-4.116 7.822s3.689-.04 7.87-1.285c.348.736.671 1.488.966 2.253-5.267 1.656-7.79 5.568-7.79 5.568-1.127-1.836-1.785-3.992-1.785-6.536zm3.32 8.761c.642-.977 2.873-4.195 7.643-5.786 1.082 2.871 1.518 5.679 1.615 6.368-1.745.86-3.719 1.348-5.812 1.348-1.57 0-3.064-.282-4.446-.786zm11.59-1.936c-.114-.73-.559-3.328-1.621-6.223 2.646-.388 4.966.012 5.309.076-.285 2.502-1.677 4.664-3.688 6.147z"/>
+                  </svg>
+                </a>
+
+                <!-- Behance -->
+                <a 
+                  href="https://www.behance.net/godwinpraise-placeholder" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="social-pill-btn" 
+                  title="Behance"
+                  data-config-social="behance"
+                  aria-label="Behance Portfolio"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22 7h-7v2h7V7zm1.726 10c-.442 1.297-2.029 3-4.971 3-3.459 0-5.69-2.336-5.69-5.918 0-3.523 2.164-6.082 5.566-6.082 3.551 0 5.344 2.508 5.344 5.795 0 .52-.062 1.055-.078 1.205h-8.082c.113 1.957 1.543 3.016 3.137 3.016 1.348 0 2.293-.656 2.774-1.617l2.001.601zm-5.187-5.594c-.062-1.391-.984-2.188-2.281-2.188-1.422 0-2.375.891-2.578 2.188h4.859zm-13.539 7.594h-5v-14h5.457c3.184 0 4.887 1.488 4.887 3.902 0 1.547-.797 2.684-2.078 3.305 1.703.543 2.594 1.879 2.594 3.738 0 2.656-1.922 4.055-5.86 4.055zm-2.5-8.234h2.516c1.375 0 2.266-.672 2.266-1.906 0-1.156-.844-1.844-2.203-1.844h-2.579v3.75zm0 6.094h2.641c1.547 0 2.5-.766 2.5-2.062 0-1.359-.984-2.125-2.453-2.125h-2.688v4.187z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Booking Card -->
+            <div class="card book-call-card">
+              <h2 class="heading-md" style="color: var(--color-maroon); margin-bottom: 0.5rem;">Book a call today!</h2>
+              <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+                For immediate attention, let's talk directly on your project.
+              </p>
+              <a 
+                href="https://cal.com/praise-godwin-6lfzkq/15min" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-primary"
+                data-config-booking
+                id="contact-book-call-btn"
+              >
+                Schedule 15-mins call
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Netlify Contact Form Card -->
+          <div class="contact-form-card">
+            <h2 class="heading-md" style="margin-bottom: 1.5rem;">Send a Message</h2>
+            <form 
+              name="contact" 
+              method="POST" 
+              data-netlify="true" 
+              netlify-honeypot="bot-field"
+              class="contact-form"
+              id="contact-page-form"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              
+              <!-- Anti-spam honeypot -->
+              <p class="visually-hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Name</label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Your full name" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email</label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="your@email.com" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">Phone / WhatsApp <span class="optional">(optional)</span></label>
+                <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+234 ..." />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Details</label>
+                <textarea id="contact-message" name="message" class="form-control" placeholder="Tell me a bit about your project." required></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-form-proceed-btn">
+                Proceed <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Full-Width "What To Expect" Strip -->
+        <div class="what-to-expect-strip">
+          <h2 class="expect-strip-title">What To Expect</h2>
+          <div class="expect-items-grid">
+            <div class="expect-item-card">
+              <span class="check-dot">✓</span>
+              <span>Project Goals &amp; Vision</span>
+            </div>
+            <div class="expect-item-card">
+              <span class="check-dot">✓</span>
+              <span>Target Users &amp; Audience</span>
+            </div>
+            <div class="expect-item-card">
+              <span class="check-dot">✓</span>
+              <span>Functionality of the product</span>
+            </div>
+            <div class="expect-item-card">
+              <span class="check-dot">✓</span>
+              <span>Branding, style, and visual direction</span>
+            </div>
+            <div class="expect-item-card">
+              <span class="check-dot">✓</span>
+              <span>What kind of app, websites, or experiences they like</span>
+            </div>
+            <div class="expect-item-card">
+              <span class="check-dot">✓</span>
+              <span>Key deliverables (wireframes, prototypes, high-fidelity designs)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Godwin Praise. All Rights Reserved. UI, UX &amp; Brand Designer.</p>
+      <div class="footer-links">
+        <a href="home.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="projects.html" class="footer-link">Projects</a>
+        <a href="process.html" class="footer-link">Process</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
