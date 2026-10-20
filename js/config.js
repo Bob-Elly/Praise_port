@@ -21,6 +21,9 @@ window.PORTFOLIO_CONFIG = {
     gmail: "mailto:godwinpraise05@gmail.com"
   },
 
+  // Resume / CV link (placeholder docs link for now)
+  cvUrl: "https://docs.google.com/document/d/placeholder",
+
   // Owner details
   name: "Godwin Praise",
   title: "UI Designer | UX Designer | Brand Designer",
@@ -46,6 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-config-booking]").forEach(el => {
     if (el.tagName === "A") {
       el.href = config.bookingUrl;
+    }
+  });
+
+  // Sync CV links
+  document.querySelectorAll("[data-config-cv]").forEach(el => {
+    if (el.tagName === "A") {
+      el.href = config.cvUrl;
     }
   });
 

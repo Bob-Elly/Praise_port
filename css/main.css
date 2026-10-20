@@ -270,9 +270,35 @@ button {
   transform: translateY(0) scale(0.98);
 }
 
+/* Solid White Button (Clean white pill with subtle maroon border) */
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-maroon);
+  border: 1.5px solid rgba(82, 0, 2, 0.25);
+  box-shadow: 0 4px 14px rgba(82, 0, 2, 0.08);
+  font-weight: 600;
+}
+
+.btn-white:hover {
+  background-color: var(--color-maroon);
+  border-color: var(--color-maroon);
+  color: var(--color-text-inverse);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-white:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: var(--shadow-pressed);
+}
+
+.btn-white:hover .btn-arrow {
+  transform: translate(2px, -2px);
+}
+
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-primary, .btn-outline, .btn-cream, .btn-secondary, .btn-arrow, 
+  .btn, .btn-primary, .btn-outline, .btn-cream, .btn-secondary, .btn-white, .btn-arrow, 
   .nav-link, .nav-glass-bar, .card, .card-tilt, .accordion-content, .marquee-track {
     transition: none !important;
     animation: none !important;
