@@ -10,12 +10,15 @@ window.PORTFOLIO_CONFIG = {
   // 15-minute consultation booking link
   bookingUrl: "https://cal.com/praise-godwin-6lfzkq/15min",
 
-  // Social profile links (Placeholders - replace with your real handles)
+  // WhatsApp direct contact
+  whatsapp: "https://wa.me/2348145778443",
+  whatsappNumber: "+234 814 577 8443",
+
+  // Social & direct channels (LinkedIn, WhatsApp, Gmail)
   socials: {
     linkedin: "https://www.linkedin.com/in/godwinpraise-placeholder",
-    twitter: "https://x.com/godwinpraise-placeholder",
-    dribbble: "https://dribbble.com/godwinpraise-placeholder",
-    behance: "https://www.behance.net/godwinpraise-placeholder"
+    whatsapp: "https://wa.me/2348145778443",
+    gmail: "mailto:godwinpraise05@gmail.com"
   },
 
   // Owner details
@@ -43,6 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-config-booking]").forEach(el => {
     if (el.tagName === "A") {
       el.href = config.bookingUrl;
+    }
+  });
+
+  // Sync WhatsApp links
+  document.querySelectorAll("[data-config-whatsapp]").forEach(el => {
+    if (el.tagName === "A") {
+      el.href = config.whatsapp;
+    }
+    if (el.dataset.configWhatsapp === "text") {
+      el.textContent = config.whatsappNumber;
     }
   });
 
